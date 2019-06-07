@@ -1,4 +1,5 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const cors = require('cors')
 const mssql = require('mssql')
 const requireDir = require('require-dir')
@@ -7,6 +8,8 @@ const requireDir = require('require-dir')
 //iniciando o app
 const app = express();
 app.use(express.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 app.use(cors())
 
 //iniciando o BD
