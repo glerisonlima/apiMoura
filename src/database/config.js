@@ -1,7 +1,7 @@
 const config = {
     user: 'sa',
     password: 'epilef',
-    server: 'localhost', // You can use 'localhost\\instance' to connect to named instance
+    server: 'localhost\\DESKTOP-PD7SR8V', // You can use 'localhost\\instance' to connect to named instance
     database: 'sismoura',
  
     options: {

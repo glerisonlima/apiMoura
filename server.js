@@ -10,9 +10,9 @@ app.use(express.json())
 app.use(cors())
 
 //iniciando o BD
-/*mssql.connect('Server=localhost;Database=sismoura;User Id=sa;Password=epilef;', {useNewUrlParser: true})
+mssql.connect('Server=localhost;Database=sismoura;User Id=sa;Password=epilef;', {useNewUrlParser: true})
 .then(conn => console.log("conectou!"))
-.catch(err => console.log("erro! " + err));*/
+.catch(err => console.log("erro! " + err));
 requireDir('./src/models')
 
 //const Product = mongoose.model('Product')
